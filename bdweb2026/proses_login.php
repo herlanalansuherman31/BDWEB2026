@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "koneksi.php";
+require_once "koneksi.php";
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) > 0) {
     $_SESSION['user'] = $username;
-    header("Location: index.php");
+    header("Location: home/index.php");
     exit();
 } else {
     echo "<script>alert('Login gagal! Username atau password salah'); window.location='login.php';</script>";

@@ -1,0 +1,175 @@
+/* ==========================================================================
+   RESET & GLOBAL STYLES (Tema Dark Tech)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0f19; /* Gelap pekat khas tech/cyber */
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   CONTAINER UTAMA
+   ========================================================================== */
+.crud-container {
+    max-width: 1200px;
+    margin: 100px auto 40px auto; /* Margin top memberikan ruang untuk navbar fix */
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   HEADER BOX (Judul & Tombol Tambah)
+   ========================================================================== */
+.table-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(17, 24, 39, 0.8);
+    padding: 20px 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(35, 192, 231, 0.2); /* Border neon tipis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.table-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* Tombol Tambah Berbentuk Bulat (+) */
+.btn-add-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #23c0e7;
+    color: #0b0f19;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(35, 192, 231, 0.4);
+}
+
+.btn-add-circle:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(35, 192, 231, 0.8);
+    transform: scale(1.1) rotate(90deg);
+}
+
+/* ==========================================================================
+   TABEL MODERN (RESPONSIF)
+   ========================================================================== */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    background: rgba(17, 24, 39, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+/* Header Tabel */
+.modern-table injustices, 
+.modern-table th {
+    background-color: rgba(15, 23, 42, 0.9);
+    color: #23c0e7; /* Warna utama cyan */
+    padding: 18px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(35, 192, 231, 0.3);
+}
+
+/* Isi Tabel */
+.modern-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+}
+
+/* Baris Selang-Seling (Zebra) */
+.modern-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Efek Hover di Setiap Baris */
+.modern-table tbody tr:hover {
+    background-color: rgba(35, 192, 231, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+/* ==========================================================================
+   TOMBOL AKSI (EDIT & HAPUS)
+   ========================================================================== */
+.action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Tombol Edit (Emoji / Icon 📝 atau ✏️) */
+.icon-btn.edit {
+    border: 1px solid rgba(16, 185, 129, 0.3); /* Hijau transparan */
+}
+
+.icon-btn.edit:hover {
+    background: #10b981;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Tombol Hapus (Emoji / Icon 🗑) */
+.icon-btn.delete {
+    border: 1px solid rgba(239, 68, 68, 0.3); /* Merah transparan */
+}
+
+.icon-btn.delete:hover {
+    background: #ef4444;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Pesan Jika Data Kosong */
+.modern-table td[colspan="6"],
+.modern-table td[colspan="5"] {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+    font-style: italic;
+}

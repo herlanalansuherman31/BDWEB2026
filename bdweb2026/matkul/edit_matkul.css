@@ -1,0 +1,124 @@
+/* ==========================================================================
+   UPDATE_MATKUL.CSS - THEME: CYBER GLOW FUTURISTIC
+   ========================================================================== */
+
+/* CONTAINER */
+.crud-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* GLASSMORPHISM CARD */
+.form-box {
+    width: 100%;
+    max-width: 700px;
+    padding: 45px;
+    border-radius: 28px;
+    background: rgba(10, 15, 35, .45);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(35,192,231, .25);
+    box-shadow: 0 0 30px rgba(35,192,231, .12);
+}
+
+/* HEADER STYLING */
+.tagline {
+    color: #23c0e7;
+    font-size: 13px;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-box h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-family: 'Arial Black', sans-serif;
+    color: #ffffff;
+}
+
+.form-box h2 span {
+    color: #7bc7ff;
+}
+
+.desc {
+    color: #d7e8ff;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* INPUT GROUPS */
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #7bc7ff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255, .08);
+    background: rgba(255,255,255, .05);
+    color: white;
+    outline: none;
+    transition: .3s;
+}
+
+.input-group input:focus {
+    border-color: #23c0e7;
+    box-shadow: 0 0 15px rgba(35,192,231, .25);
+}
+
+/* KODE MK READONLY LOCK STYLE */
+input[readonly] {
+    background: rgba(255,255,255, .03);
+    color: #7ebeff;
+    cursor: not-allowed;
+    border: 1px solid rgba(35,192,231, .2);
+}
+
+/* BUTTONS */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-back {
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 14px;
+    background: rgba(255,255,255, .08);
+    color: white;
+    transition: .3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-save {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #23c0e7, #1b7cff);
+    transition: .3s;
+}
+
+.btn-back:hover,
+.btn-save:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(35,192,231, .2);
+}

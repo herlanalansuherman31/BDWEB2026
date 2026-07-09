@@ -1,0 +1,136 @@
+/* ==========================================================================
+   MATAKULIAH.CSS - THEME: CYBER GLOW FUTURISTIC
+   ========================================================================== */
+
+/* ================= */
+/* CONTAINER */
+/* ================= */
+.crud-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;          
+}
+
+/* ================= */
+/* HEADER & ACTION BUTTONS */
+/* ================= */
+.table-box {
+    display: flex;
+    justify-content: space-between;      
+    align-items: center;                  
+    margin-bottom: 25px;                  
+}
+
+.table-box h3 {
+    font-size: 34px;
+    color: #CCBDBC;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(35,192,231,.25);
+}
+
+.btn-add-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;                   
+    display: flex;                        
+    justify-content: center;                
+    align-items: center;                  
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(135deg, #23c0e7, #1b7cff);
+    box-shadow: 0 0 15px rgba(35,192,231,.25);   
+    transition: 0.3s; 
+}
+
+.btn-add-circle:hover {
+    background: linear-gradient(135deg, #391fcc, #23c0e7);
+    box-shadow: 0 0 25px rgba(35,192,231,.5); 
+    transform: scale(1.1);
+}
+
+/* ================= */
+/* TABLE CARD CONTAINER */
+/* ================= */
+.table-responsive {
+    overflow-x: auto; 
+    border-radius: 25px;
+    background: rgba(10, 15, 35, 0.45);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(35,192,231, 0.25);
+    box-shadow: 0 0 30px rgba(35,192,231, 0.25);
+    padding: 20px;
+}
+
+/* ================= */
+/* MODERN TABLE STYLE */
+/* ================= */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modern-table thead {
+    background: rgba(35,192,231, .12);
+}
+
+.modern-table thead th {
+    border-bottom: 2px solid #23c0e7;
+    padding: 18px;
+    text-align: left;
+    color: #7ebeff;
+    letter-spacing: 1px;
+}
+
+.modern-table tbody tr {
+    border-bottom: 1px solid rgba(255,255,255, .1);
+    transition: 0.3s;
+}
+
+.modern-table tbody tr:hover {
+    background: rgba(35,192,231, .1);
+}
+
+.modern-table tbody td {
+    padding: 15px 18px;
+    color: #ffffff;
+}
+
+/* ================= */
+/* ACTION ICONS (EDIT / DELETE) */
+/* ================= */
+.action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.icon-btn.edit { 
+    background: rgba(46,204,113, .15); 
+    border: 1px solid rgba(46,204,113, .3); 
+} 
+    
+.icon-btn.delete { 
+    background: rgba(231,76,60, .15); 
+    border: 1px solid rgba(231,76,60, .3); 
+} 
+
+.icon-btn:hover { 
+    transform: translateY(-3px); 
+}
